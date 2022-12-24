@@ -112,13 +112,24 @@ label {
 	width: 100px;
 	height: 50px;
 	border-radius: 5px;
-	border: 1px solid black;
+	border: 3px solid black;
 	font-weight: 600;
 	font-size: 18px;
+	cursor: pointer;
 }
 
 .sign-up-btn {
 	background-color: #d4d675;
+}
+
+.sign-up-btn:hover {
+	background-color: #d4d580;
+}
+
+.sign-up-btn:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
 }
 
 .cancel-btn {
