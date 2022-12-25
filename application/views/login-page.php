@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/css/login-page/login-page-style.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('public/css/login-page/login-page-style.css'); ?>" media="all">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/css/global/global-style.css">
   </head> 
   
