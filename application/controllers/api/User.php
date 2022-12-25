@@ -10,20 +10,9 @@ class User extends REST_Controller {
     parent::__construct();
     $this->load->helper('url');
   }
-  
-  // public function index() {
-  //   $this->load->view('login-page');
-  // }
 
-  // public function index_get() {
-  //   echo "This is get a method";
-  // }
-
+  // http://localhost/2019483/index.php/api/User/login
   public function login_get() {
     $this->load->view('login-page');
-  }
-
-  public function signup_get() {
-    $this->load->view('signup-page');
   }
 }
