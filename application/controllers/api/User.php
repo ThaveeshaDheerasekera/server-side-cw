@@ -15,4 +15,9 @@ class User extends REST_Controller {
   public function login_get() {
     $this->load->view('login-page');
   }
+
+  // http://localhost/2019483/index.php/api/User/signup
+  public function signup_get() {
+    $this->load->view('signup-page');
+  }
 }
