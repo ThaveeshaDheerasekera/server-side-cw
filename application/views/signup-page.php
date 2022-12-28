@@ -12,7 +12,9 @@
 <body>
     <div class="container">
         <div class="header">
-            <span class="material-symbols-outlined">arrow_back</span>
+            <span class="btn-span">
+                <button><span class="material-symbols-outlined">arrow_back</span></button>
+            </span>
             <h2>Sign Up</h2>
         </div>
         <div class="form-section">
