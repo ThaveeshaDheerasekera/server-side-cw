@@ -6,18 +6,26 @@ require APPPATH . 'libraries/REST_Controller.php';
 
 class User extends REST_Controller {
 
-  public function __construct() {
-    parent::__construct();
-    $this->load->helper('url');
-  }
+    public function __construct() {
+        parent::__construct();
+        $this->load->helper('url');
+    }
 
   // http://localhost/2019483/index.php/api/User/login
-  public function login_get() {
-    $this->load->view('login-page');
-  }
+    public function login_get() {
+        $this->load->view('login-page');
+    }
 
-  // http://localhost/2019483/index.php/api/User/signup
-  public function signup_get() {
-    $this->load->view('signup-page');
-  }
+    // http://localhost/2019483/index.php/api/User/signup
+    public function signup_get() {
+        $this->load->view('signup-page');
+    }
+    
+    public function home_get() {
+        $this->load->view('home-page');
+    }
+    
+    public function about_get() {
+        $this->load->view('about-page');
+    }
 }

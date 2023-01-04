@@ -1,0 +1,66 @@
+.navbar {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d9d9d9;
+  border-bottom: 1.5px solid black;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+}
+
+.leader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  height: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+  background: #9ba17b;
+  border-right: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+  border-radius: 0 0 30px 0;
+  margin-bottom: -1.5px;
+}
+.leader img {
+  height: 85px;
+  width: auto;
+}
+.leader h2 {
+  font-size: 36px;
+}
+.leader .account-icon {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.leader .account-icon .account-circle {
+  font-size: 36px;
+}
+.leader .account-icon:hover .account-circle {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+  margin-right: 40px;
+}
+.navbar-items p {
+  font-size: 30px;
+}
+.navbar-items p a {
+  text-decoration: none;
+  color: black;
+}
+.navbar-items p a:hover,
+.navbar-items p .active {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=navbar-style.css.map */
