@@ -27,7 +27,7 @@
             </span>
         </div>
 
-        <div class="body-container">
+        <div class="body">
             <div class="header">
                 <h2>Top Questions</h2>
                 <span class="content">
@@ -45,7 +45,22 @@
             </div>
 
             <div class="container">
-                <h1>Main Container</h1>
+                <?php for ($x = 0; $x <= 10; $x++) { ?>
+                <div class="question-card">
+                    <div class="rating-section">
+                        <div class="like-btn">
+                        </div>
+                        <div class="dislike-btn"></div>
+                    </div>
+                    <div class="vl"></div>
+                    <div class="main-section">
+                        <p>Middle</p>
+                    </div>
+                    <div class="right-section">
+                        <p>right</p>
+                    </div>
+                </div>
+                <?php } ?>
             </div>
         </div>
     </body>

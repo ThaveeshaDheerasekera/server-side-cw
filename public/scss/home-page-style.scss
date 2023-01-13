@@ -4,10 +4,11 @@
 	justify-content: space-between;
 }
 
+$gray-color: #d9d9d9;
 $red-color: #cfa197;
 $icon-font-size: 36px;
 
-.body-container {
+.body {
 	margin-top: 120px;
 	display: flex;
 	flex-direction: column;
@@ -85,5 +86,42 @@ $icon-font-size: 36px;
 		width: 100%;
 		padding: 0 35px;
 		background-color: #fff;
+
+		.question-card {
+			display: flex;
+			align-items: center;
+			padding: 20px;
+			height: 200px;
+			background-color: $gray-color;
+			border: 1.5px solid black;
+			border-radius: 20px;
+			margin-top: 20px;
+
+			.rating-section {
+				background-color: beige;
+				width: 10%;
+				height: 100%;
+				padding: 10px;
+			}
+
+			.vl {
+				border-left: 1px solid black;
+				height: 80%;
+			}
+
+			.main-section {
+				background-color: azure;
+				width: 80%;
+				padding: 10px;
+				height: 100%;
+			}
+
+			.right-section {
+				background-color: antiquewhite;
+				width: 10%;
+				padding: 10px;
+				height: 100%;
+			}
+		}
 	}
 }
