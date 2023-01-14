@@ -69,3 +69,6 @@ Acknowledgement
 
 The CodeIgniter team would like to thank EllisLab, all the
 contributors to the CodeIgniter project and you, the CodeIgniter user.
+
+To compile the .scss file in (2019483/pubic/scss) to .css (2019483/public/css)
+sass --watch scss:css

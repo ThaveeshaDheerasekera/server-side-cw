@@ -1,0 +1,208 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.body .header {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 35px 0 35px;
+  background-color: white;
+}
+.body .header .date {
+  padding: 0 0 10px 20px;
+  font-size: 17px;
+}
+.body .header .question-area {
+  min-height: 150px;
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 100%;
+  padding: 15px 20px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+.body .header .question-area p {
+  font-size: 19px;
+  text-align: justify;
+  font-weight: bold;
+}
+.body .header .btn-tag-panel {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 15px 15px;
+}
+.body .header .btn-tag-panel .like-btn {
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.body .header .btn-tag-panel .like-btn button {
+  background-color: transparent;
+  border: none;
+}
+.body .header .btn-tag-panel .like-btn button img {
+  content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill0.svg");
+  width: 18px;
+}
+.body .header .btn-tag-panel .like-btn button:hover img {
+  content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill1.svg");
+  width: 18px;
+}
+.body .header .btn-tag-panel .like-btn p {
+  font-size: 17px;
+}
+.body .header .btn-tag-panel .dislike-btn {
+  width: 100px;
+  height: 30px;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.body .header .btn-tag-panel .dislike-btn button {
+  background-color: transparent;
+  border: none;
+}
+.body .header .btn-tag-panel .dislike-btn button img {
+  content: url("http://localhost/developer-support/public/assets/images/thumb_down_fill0.svg");
+  width: 18px;
+}
+.body .header .btn-tag-panel .dislike-btn button:hover img {
+  content: url("http://localhost/developer-support/public/assets/images/thumb_down_fill1.svg");
+  width: 18px;
+}
+.body .header .btn-tag-panel .dislike-btn p {
+  font-size: 17px;
+}
+.body .header .answer-btn {
+  width: 120px;
+  height: 40px;
+  font-size: 23px;
+  background-color: #cfa197;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.body .header .answer-btn:hover {
+  border: 2px solid black;
+  font-weight: bold;
+}
+.body .main-container {
+  width: 100%;
+  padding: 0 35px;
+  text-decoration: none;
+  color: black;
+}
+.body .main-container .answer-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  min-height: 120px;
+  background-color: #d9d9d9;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.body .main-container .answer-card .rating-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 10%;
+  height: 120px;
+  padding: 10px 20px 10px 10px;
+}
+.body .main-container .answer-card .rating-section .like-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  padding: 5%;
+}
+.body .main-container .answer-card .rating-section .like-btn button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.body .main-container .answer-card .rating-section .like-btn button img {
+  width: 19px;
+  content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill0.svg");
+}
+.body .main-container .answer-card .rating-section .like-btn button:hover img {
+  content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill1.svg");
+}
+.body .main-container .answer-card .rating-section .like-btn p {
+  font-size: 17px;
+}
+.body .main-container .answer-card .rating-section .dislike-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  padding: 5%;
+}
+.body .main-container .answer-card .rating-section .dislike-btn button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.body .main-container .answer-card .rating-section .dislike-btn button img {
+  width: 19px;
+  content: url("http://localhost/developer-support/public/assets/images/thumb_down_fill0.svg");
+}
+.body .main-container .answer-card .rating-section .dislike-btn button:hover img {
+  content: url("http://localhost/developer-support/public/assets/images/thumb_down_fill1.svg");
+}
+.body .main-container .answer-card .rating-section .dislike-btn p {
+  font-size: 19px;
+}
+.body .main-container .answer-card .vl {
+  border-left: 1px solid black;
+  min-height: 120px;
+}
+.body .main-container .answer-card .main-section {
+  width: 80%;
+  padding: 10px 10px 10px 20px;
+  height: 100%;
+}
+.body .main-container .answer-card .main-section p {
+  text-align: justify;
+  font-size: 17px;
+}
+.body .main-container .answer-card .right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 10%;
+}
+.body .main-container .answer-card .right-section .date p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=question-page-style.css.map */

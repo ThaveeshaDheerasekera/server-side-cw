@@ -5,9 +5,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/css/login-page/login-page-style.css">
-    <link rel='stylesheet' type='text/css' href="<?php echo base_url(); ?>public/css/global/form-style.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/css/global/global-style.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/css/login-page-style.css">
+    <link rel='stylesheet' type='text/css' href="<?php echo base_url(); ?>public/css/form-style.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/css/global-style.css">
 </head>
 
 <body>

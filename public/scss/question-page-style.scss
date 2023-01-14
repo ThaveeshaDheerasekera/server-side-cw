@@ -1,0 +1,267 @@
+@mixin flex-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+// colors
+$gray-color: #d9d9d9;
+$red-color: #cfa197;
+
+// font sizes
+$n-font: 15px;
+$h3-font: 17px;
+$h2-font: 19px;
+$h1-font: 23px;
+
+.body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+
+	.header {
+		margin-top: 120px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
+		width: 100%;
+		padding: 15px 35px 0 35px;
+		background-color: white;
+
+		.date {
+			padding: 0 0 10px 20px;
+			font-size: $h3-font;
+		}
+
+		.question-area {
+			min-height: 150px;
+			border: 1px solid black;
+			border-radius: 15px;
+			width: 100%;
+			padding: 15px 20px;
+			overflow: scroll;
+			scroll-behavior: smooth;
+
+			p {
+				font-size: $h2-font;
+				text-align: justify;
+				font-weight: bold;
+			}
+		}
+
+		.btn-tag-panel {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			padding: 15px 15px;
+
+			.like-btn {
+				width: 100px;
+				height: 30px;
+				margin-right: 10px;
+				background-color: $gray-color;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0 10px 0 5px;
+				border: 1px solid black;
+				border-radius: 5px;
+
+				button {
+					background-color: transparent;
+					border: none;
+
+					img {
+						content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill0.svg");
+						width: 18px;
+					}
+
+					&:hover {
+						img {
+							content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill1.svg");
+							width: 18px;
+						}
+					}
+				}
+
+				p {
+					font-size: $h3-font;
+				}
+			}
+
+			.dislike-btn {
+				width: 100px;
+				height: 30px;
+				background-color: $gray-color;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0 10px 0 5px;
+				border: 1px solid black;
+				border-radius: 5px;
+
+				button {
+					background-color: transparent;
+					border: none;
+
+					img {
+						content: url("http://localhost/developer-support/public/assets/images/thumb_down_fill0.svg");
+						width: 18px;
+					}
+
+					&:hover {
+						img {
+							content: url("http://localhost/developer-support/public/assets/images/thumb_down_fill1.svg");
+							width: 18px;
+						}
+					}
+				}
+
+				p {
+					font-size: $h3-font;
+				}
+			}
+		}
+
+		.answer-btn {
+			width: 120px;
+			height: 40px;
+			font-size: $h1-font;
+			background-color: $red-color;
+			border: 1px solid black;
+			border-radius: 5px;
+			margin-right: 20px;
+
+			&:hover {
+				border: 2px solid black;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.main-container {
+		width: 100%;
+		padding: 0 35px;
+
+		text-decoration: none;
+		color: black;
+
+		.answer-card {
+			display: flex;
+			align-items: center;
+			padding: 10px;
+			min-height: 120px;
+			background-color: $gray-color;
+			border: 1px solid black;
+			border-radius: 15px;
+			margin-top: 20px;
+			cursor: pointer;
+
+			.rating-section {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-between;
+				width: 10%;
+				height: 120px;
+				padding: 10px 20px 10px 10px;
+
+				.like-btn {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					width: 100%;
+					border: 1px solid black;
+					border-radius: 5px;
+					background-color: white;
+					padding: 5%;
+
+					button {
+						background-color: transparent;
+						border: none;
+						cursor: pointer;
+
+						img {
+							width: $h2-font;
+							content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill0.svg");
+						}
+
+						&:hover {
+							img {
+								content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill1.svg");
+							}
+						}
+					}
+
+					p {
+						font-size: $h3-font;
+					}
+				}
+
+				.dislike-btn {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					width: 100%;
+					border: 1px solid black;
+					border-radius: 5px;
+					background-color: white;
+					padding: 5%;
+
+					button {
+						background-color: transparent;
+						border: none;
+						cursor: pointer;
+
+						img {
+							width: $h2-font;
+							content: url("http://localhost/developer-support/public/assets/images/thumb_down_fill0.svg");
+						}
+
+						&:hover {
+							img {
+								content: url("http://localhost/developer-support/public/assets/images/thumb_down_fill1.svg");
+							}
+						}
+					}
+					p {
+						font-size: $h2-font;
+					}
+				}
+			}
+
+			.vl {
+				border-left: 1px solid black;
+				min-height: 120px;
+			}
+
+			.main-section {
+				width: 80%;
+				padding: 10px 10px 10px 20px;
+				height: 100%;
+
+				p {
+					text-align: justify;
+					font-size: $h3-font;
+				}
+			}
+
+			.right-section {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+				justify-content: space-between;
+				width: 10%;
+
+				.date {
+					p {
+						font-size: $n-font;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}
