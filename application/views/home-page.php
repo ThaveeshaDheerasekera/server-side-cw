@@ -5,33 +5,27 @@
 
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/css/home-page-style.css">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/css/navbar-style.css">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/css/global-style.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"></script>
+        <script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.9.2/backbone-min.js"></script>
     </head>
 
     <body>
-        <div class="navbar">
-            <span class="leader">
-                <img src="<?php echo base_url(); ?>public/assets/images/logo.png" alt="logo">
-                <h2>Developer Support</h2>
-                <button class="account-icon">
-                    <span class="material-icons-outlined account-circle">account_circle</span>
-                </button>
-            </span>
-            <span class="navbar-items">
-                <p><a class="active" href="<?php echo base_url('index.php/api/User/home'); ?>">Home</a></p>
-                <p><a href="<?php echo base_url('index.php/api/User/about'); ?>">About</a></p>
-            </span>
-        </div>
+        <!-- Navigation Bar -->
+        <?php include 'application/views/nav-bar-widget.php';?>
 
         <div class="body">
             <div class="header">
                 <h2>Top Questions</h2>
                 <span class="content">
-                    <button class="question-btn">Ask Question</button>
+                    <button id="ask-question-btn" class="question-btn">Ask Question</button>
                     <button class="filter-btn">
                         <span class="material-icons-outlined filter-alt">filter_alt</span>
                     </button>
@@ -46,23 +40,92 @@
 
             <div class="container">
                 <?php for ($x = 0; $x <= 10; $x++) { ?>
-                <div class="question-card">
-                    <div class="rating-section">
-                        <div class="like-btn">
+                <a href="<?php echo base_url(); ?>index.php/questions/q">
+                    <div class="question-card">
+                        <div class="rating-section">
+                            <div class="like-btn">
+                                <button><img></button>
+                                <p>30</p>
+                            </div>
+                            <div class="dislike-btn">
+                                <button><img></button>
+                                <p>10</p>
+                            </div>
                         </div>
-                        <div class="dislike-btn"></div>
+                        <div class="vl"></div>
+                        <div class="main-section">
+                            <p>Why does kotlin/native hello world not output anything inside IntelliJ IDEA? Why does
+                                kotlin/native hello world not output anything inside IntelliJ IDEA? Why does
+                                kotlin/native
+                                hello world not output anything inside IntelliJ IDEA?Why does kotlin/native hello world
+                                not
+                                output anything inside IntelliJ IDEA?Why does kotlin/native hello world not output
+                                anything
+                                inside IntelliJ IDEA?Why does kotlin/native hello world not output anything inside
+                                IntelliJ
+                                IDEA?Why does kotlin/native hello world not output anything inside IntelliJ IDEA?Why
+                                does
+                                kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
+                                kotlin/native
+                                hello world not output anything inside IntelliJ IDEA?Why does kotlin/native hello world
+                                not
+                                output anything inside IntelliJ IDEA?Why does kotlin/native hello world not output
+                                anything
+                                inside IntelliJ IDEA?Why does kotlin/native hello world not output anything inside
+                                IntelliJ
+                                IDEA?Why does kotlin/native hello world not output anything inside IntelliJ IDEA?Why
+                                does
+                                kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
+                                kotlin/native
+                                hello world not output anything inside IntelliJ IDEA?Why does kotlin/native hello world
+                                not
+                                output anything inside IntelliJ IDEA?Why does kotlin/native hello world not output
+                                anything
+                                inside IntelliJ IDEA?Why does kotlin/native hello world not output anything inside
+                                IntelliJ
+                                IDEA?Why does kotlin/native hello world not output anything inside IntelliJ IDEA?Why
+                                does
+                                kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
+                                kotlin/native
+                                hello world not output anything inside IntelliJ IDEA?Why does kotlin/native hello world
+                                not
+                                output anything inside IntelliJ IDEA?Why does kotlin/native hello world not output
+                                anything
+                                inside IntelliJ IDEA?</p>
+                        </div>
+                        <div class="right-section">
+                            <div class="ans-box">
+                                <p>10</p>
+                            </div>
+                            <div class="date">
+                                <p>14/01/2023</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="vl"></div>
-                    <div class="main-section">
-                        <p>Middle</p>
-                    </div>
-                    <div class="right-section">
-                        <p>right</p>
-                    </div>
-                </div>
+                </a>
                 <?php } ?>
             </div>
         </div>
+
+        <!-- <script>
+        var apiUrl = "<?php echo base_url(); ?>index.php/api/questions/index"
+        $(document).ready(function() {
+            $('#ask-question-btn').click(function(event) {
+                event.preventDefault();
+                console.log(apiUrl);
+                $.ajax({
+                    url: apiUrl,
+                    method: "GET",
+                    dataType: "json"
+                }).done(function(data) {
+                    console.log("Result Came");
+                    // var ss = data;
+                    console.log(data);
+                    // $('#ss').html((data.isValid).toString());
+                })
+            })
+        })
+        </script> -->
     </body>
 
 </html>

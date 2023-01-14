@@ -1,65 +1,67 @@
 .navbar {
   width: 100%;
-  height: 120px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #d9d9d9;
-  border-bottom: 1.5px solid black;
+  border-bottom: 1px solid black;
   position: fixed;
   top: 0;
   overflow: hidden;
 }
-
-.leader {
+.navbar .leader {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 50%;
+  width: 40%;
   height: 100%;
   padding-left: 60px;
   padding-right: 60px;
   background: #9ba17b;
-  border-right: 1.5px solid black;
-  border-bottom: 1.5px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
   border-radius: 0 0 30px 0;
-  margin-bottom: -1.5px;
+  margin-bottom: -1px;
 }
-.leader img {
-  height: 85px;
+.navbar .leader img {
+  height: 50px;
   width: auto;
 }
-.leader h2 {
-  font-size: 36px;
+.navbar .leader h2 {
+  font-size: 23px;
 }
-.leader .account-icon {
+.navbar .leader button {
   background-color: transparent;
   border: 0;
   cursor: pointer;
 }
-.leader .account-icon .account-circle {
-  font-size: 36px;
+.navbar .leader button img {
+  content: url("http://localhost/developer-support/public/assets/images/account_circle_fill0.svg");
+  width: 35px;
+  height: auto;
 }
-.leader .account-icon:hover .account-circle {
-  color: rgba(0, 0, 0, 0.75);
+.navbar .leader button:hover img {
+  content: url("http://localhost/developer-support/public/assets/images/account_circle_fill1.svg");
+  width: 35px;
+  height: auto;
 }
-
-.navbar-items {
+.navbar .navbar-items {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 15%;
   margin-right: 40px;
 }
-.navbar-items p {
+.navbar .navbar-items p {
   font-size: 30px;
 }
-.navbar-items p a {
+.navbar .navbar-items p a {
   text-decoration: none;
   color: black;
 }
-.navbar-items p a:hover,
-.navbar-items p .active {
+.navbar .navbar-items p a:hover,
+.navbar .navbar-items p .active {
   font-weight: 600;
 }
 

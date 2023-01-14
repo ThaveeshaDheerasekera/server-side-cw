@@ -69,12 +69,16 @@
 }
 .body .container {
   margin-top: 150px;
-  height: 1500px;
+  height: 100px;
   width: 100%;
   padding: 0 35px;
   background-color: #fff;
 }
-.body .container .question-card {
+.body .container a {
+  text-decoration: none;
+  color: black;
+}
+.body .container a .question-card {
   display: flex;
   align-items: center;
   padding: 20px;
@@ -83,28 +87,113 @@
   border: 1.5px solid black;
   border-radius: 20px;
   margin-top: 20px;
+  cursor: pointer;
 }
-.body .container .question-card .rating-section {
-  background-color: beige;
+.body .container a .question-card .rating-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   width: 10%;
-  height: 100%;
-  padding: 10px;
+  height: 65%;
+  padding: 10px 20px 10px 10px;
 }
-.body .container .question-card .vl {
+.body .container a .question-card .rating-section .like-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  background-color: white;
+  padding: 0 5%;
+}
+.body .container a .question-card .rating-section .like-btn button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.body .container a .question-card .rating-section .like-btn button img {
+  width: 30px;
+  height: auto;
+  content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill0.svg");
+}
+.body .container a .question-card .rating-section .like-btn button:hover img {
+  content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill1.svg");
+}
+.body .container a .question-card .rating-section .like-btn p {
+  font-size: 18px;
+}
+.body .container a .question-card .rating-section .dislike-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  background-color: white;
+  padding: 0 5%;
+}
+.body .container a .question-card .rating-section .dislike-btn button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.body .container a .question-card .rating-section .dislike-btn button img {
+  width: 30px;
+  height: auto;
+  content: url("http://localhost/developer-support/public/assets/images/thumb_down_fill0.svg");
+}
+.body .container a .question-card .rating-section .dislike-btn button:hover img {
+  content: url("http://localhost/developer-support/public/assets/images/thumb_down_fill1.svg");
+}
+.body .container a .question-card .rating-section .dislike-btn p {
+  font-size: 18px;
+}
+.body .container a .question-card .vl {
   border-left: 1px solid black;
-  height: 80%;
-}
-.body .container .question-card .main-section {
-  background-color: azure;
-  width: 80%;
-  padding: 10px;
   height: 100%;
 }
-.body .container .question-card .right-section {
-  background-color: antiquewhite;
+.body .container a .question-card .main-section {
+  width: 80%;
+  padding: 20px 20px 20px 40px;
+  height: 100%;
+}
+.body .container a .question-card .main-section p {
+  text-align: justify;
+  font-size: 22px;
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.body .container a .question-card .right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
   width: 10%;
   padding: 10px;
   height: 100%;
+}
+.body .container a .question-card .right-section .ans-box {
+  display: flex;
+  justify-content: center;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  background-color: white;
+  padding: 2px 0;
+  width: 70%;
+}
+.body .container a .question-card .right-section .ans-box p {
+  font-size: 18px;
+}
+.body .container a .question-card .right-section .date p {
+  font-size: 18px;
+}
+.body .container a:hover .question-card {
+  border: 1.5px solid #9ba17b;
 }
 
 /*# sourceMappingURL=home-page-style.css.map */

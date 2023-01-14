@@ -1,7 +1,7 @@
 body {
-  height: 100vh;
-  width: 100hh;
-  background-color: #d9d9d9;
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden;
 }
 
 .container {

@@ -4,75 +4,88 @@
 	justify-content: space-between;
 }
 
-$green-color: #9ba17b;
+$border-width: 1px;
+
+// colors
 $gray-color: #d9d9d9;
-$border-width: 1.5px;
+$red-color: #cfa197;
+$green-color: #9ba17b;
+
+// font sizes
+$n-font: 15px;
+$h3-font: 17px;
+$h2-font: 19px;
+$h1-font: 23px;
 
 .navbar {
 	width: 100%;
-	height: 120px;
+	height: 70px;
 	@include flex-row;
 	background-color: $gray-color;
 	border-bottom: $border-width solid black;
 	position: fixed;
 	top: 0;
 	overflow: hidden;
-}
 
-.leader {
-	@include flex-row;
-	width: 50%;
-	height: 100%;
-	padding-left: 60px;
-	padding-right: 60px;
-	background: $green-color;
-	border-right: $border-width solid black;
-	border-bottom: $border-width solid black;
-	border-radius: 0 0 30px 0;
-	margin-bottom: -$border-width;
+	.leader {
+		@include flex-row;
+		width: 40%;
+		height: 100%;
+		padding-left: 60px;
+		padding-right: 60px;
+		background: $green-color;
+		border-right: $border-width solid black;
+		border-bottom: $border-width solid black;
+		border-radius: 0 0 30px 0;
+		margin-bottom: -$border-width;
 
-	img {
-		height: 85px;
-		width: auto;
-	}
-
-	h2 {
-		font-size: 36px;
-	}
-
-	.account-icon {
-		background-color: transparent;
-		border: 0;
-		cursor: pointer;
-
-		.account-circle {
-			font-size: 36px;
+		img {
+			height: 50px;
+			width: auto;
 		}
 
-		&:hover {
-			.account-circle {
-				color: rgba(0, 0, 0, 0.75);
+		h2 {
+			font-size: $h1-font;
+		}
+
+		button {
+			background-color: transparent;
+			border: 0;
+			cursor: pointer;
+
+			img {
+				content: url("http://localhost/developer-support/public/assets/images/account_circle_fill0.svg");
+				width: 35px;
+				height: auto;
+			}
+
+			&:hover {
+				img {
+					content: url("http://localhost/developer-support/public/assets/images/account_circle_fill1.svg");
+					width: 35px;
+					height: auto;
+				}
 			}
 		}
 	}
-}
 
-.navbar-items {
-	@include flex-row;
-	width: 15%;
-	margin-right: 40px;
+	.navbar-items {
+		@include flex-row;
+		width: 15%;
+		margin-right: 40px;
 
-	p {
-		font-size: 30px;
+		p {
+			font-size: 30px;
 
-		a {
-			text-decoration: none;
-			color: black;
-		}
+			a {
+				text-decoration: none;
+				color: black;
+			}
 
-		a:hover,
-		.active {
-			font-weight: 600;
+			a:hover,
+			.active {
+				font-weight: 600;
+			}
 		}
 	}
 }

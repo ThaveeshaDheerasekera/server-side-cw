@@ -5,7 +5,6 @@ class Questions extends CI_Controller {
 
     public function __construct() {
         parent::__construct();
-        $this->load->helper('url');
     }
 
     /** 
@@ -17,6 +16,10 @@ class Questions extends CI_Controller {
      * */ 
     public function index() {
         $this->load->view('home-page');
+    }
+
+    public function q() {
+        $this->load->view('question-page');
     }
     
     public function about() {
