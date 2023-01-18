@@ -24,25 +24,18 @@
             <div class="header">
                 <pre class="date"><strong>Date:    </strong>15/01/2023</pre>
                 <div class="question-area">
-                    <p>Why does kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                        kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                        kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                        kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                        kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                        kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                        kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                        kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                        kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                        kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                        kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                        kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                        kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                        kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                        kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                        kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                        kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                        kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                        kotlin/native hello world not output anything inside IntelliJ IDEA?</p>
+                    <h3>Why does kotlin/native hello world not output anything inside IntelliJ IDEA?</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mauris magna, elementum vel
+                        aliquam eu, pretium gravida est. Nam eu ante at massa luctus eleifend. Sed fringilla justo nec
+                        diam consectetur, et suscipit magna sagittis. Vestibulum vulputate, metus sit amet mollis
+                        consectetur, ex nisi efficitur lacus, a faucibus purus metus vitae orci. Sed sit amet rhoncus
+                        ante, at consequat orci. Vivamus pellentesque vel enim vitae ullamcorper. Mauris consectetur
+                        lacinia velit non dictum. Suspendisse nec suscipit ipsum. Vestibulum rhoncus mi scelerisque eros
+                        posuere, vel efficitur neque blandit. Suspendisse vestibulum purus vitae dui tempor accumsan.
+                        Aliquam id est justo. Nullam rhoncus a erat a molestie. Suspendisse eleifend diam sed tincidunt
+                        egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                        egestas. Aliquam erat volutpat.</p>
                 </div>
                 <div class="btn-tag-panel">
                     <button class="answer-btn">Answer</button>

@@ -8,7 +8,6 @@
         <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/css/home-page-style.css">
-        <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/css/navbar-style.css">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/css/global-style.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
@@ -25,22 +24,19 @@
             <div class="header">
                 <h2>Top Questions</h2>
                 <span class="content">
-                    <button id="ask-question-btn" class="question-btn">Ask Question</button>
-                    <button class="filter-btn">
-                        <span class="material-icons-outlined filter-alt">filter_alt</span>
-                    </button>
+                    <button id="ask-question-btn" class="question-btn" onclick="viewAskQuestionPage()">Ask
+                        Question</button>
+                    <button class=" filter-btn"><img></button>
                     <span class="search-container">
                         <input type="text" name="search" placeholder="Search...">
-                        <button class="search-btn" type="submit">
-                            <span class="material-icons-outlined search">search</span>
-                        </button>
+                        <button class="search-btn" type="submit"><img></button>
                     </span>
                 </span>
             </div>
 
             <div class="container">
-                <?php for ($x = 0; $x <= 10; $x++) { ?>
-                <a href="<?php echo base_url(); ?>index.php/questions/q">
+                <?php foreach($questions as $row) { ?>
+                <a href="<?php echo base_url(); ?>index.php/questions/question">
                     <div class="question-card">
                         <div class="rating-section">
                             <div class="like-btn">
@@ -54,51 +50,14 @@
                         </div>
                         <div class="vl"></div>
                         <div class="main-section">
-                            <p>Why does kotlin/native hello world not output anything inside IntelliJ IDEA? Why does
-                                kotlin/native hello world not output anything inside IntelliJ IDEA? Why does
-                                kotlin/native
-                                hello world not output anything inside IntelliJ IDEA?Why does kotlin/native hello world
-                                not
-                                output anything inside IntelliJ IDEA?Why does kotlin/native hello world not output
-                                anything
-                                inside IntelliJ IDEA?Why does kotlin/native hello world not output anything inside
-                                IntelliJ
-                                IDEA?Why does kotlin/native hello world not output anything inside IntelliJ IDEA?Why
-                                does
-                                kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                                kotlin/native
-                                hello world not output anything inside IntelliJ IDEA?Why does kotlin/native hello world
-                                not
-                                output anything inside IntelliJ IDEA?Why does kotlin/native hello world not output
-                                anything
-                                inside IntelliJ IDEA?Why does kotlin/native hello world not output anything inside
-                                IntelliJ
-                                IDEA?Why does kotlin/native hello world not output anything inside IntelliJ IDEA?Why
-                                does
-                                kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                                kotlin/native
-                                hello world not output anything inside IntelliJ IDEA?Why does kotlin/native hello world
-                                not
-                                output anything inside IntelliJ IDEA?Why does kotlin/native hello world not output
-                                anything
-                                inside IntelliJ IDEA?Why does kotlin/native hello world not output anything inside
-                                IntelliJ
-                                IDEA?Why does kotlin/native hello world not output anything inside IntelliJ IDEA?Why
-                                does
-                                kotlin/native hello world not output anything inside IntelliJ IDEA?Why does
-                                kotlin/native
-                                hello world not output anything inside IntelliJ IDEA?Why does kotlin/native hello world
-                                not
-                                output anything inside IntelliJ IDEA?Why does kotlin/native hello world not output
-                                anything
-                                inside IntelliJ IDEA?</p>
+                            <p><?=$row->title?></p>
                         </div>
                         <div class="right-section">
                             <div class="ans-box">
                                 <p>10</p>
                             </div>
                             <div class="date">
-                                <p>14/01/2023</p>
+                                <p><?=$row->created_at?></p>
                             </div>
                         </div>
                     </div>
@@ -107,25 +66,11 @@
             </div>
         </div>
 
-        <!-- <script>
-        var apiUrl = "<?php echo base_url(); ?>index.php/api/questions/index"
-        $(document).ready(function() {
-            $('#ask-question-btn').click(function(event) {
-                event.preventDefault();
-                console.log(apiUrl);
-                $.ajax({
-                    url: apiUrl,
-                    method: "GET",
-                    dataType: "json"
-                }).done(function(data) {
-                    console.log("Result Came");
-                    // var ss = data;
-                    console.log(data);
-                    // $('#ss').html((data.isValid).toString());
-                })
-            })
-        })
-        </script> -->
+        <script>
+        function viewAskQuestionPage() {
+            window.location.assign("<?php echo base_url(); ?>index.php/Questions/addQuestion")
+        }
+        </script>
     </body>
 
 </html>

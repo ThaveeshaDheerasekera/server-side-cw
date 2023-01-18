@@ -28,7 +28,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $config['base_url'] = 'http://localhost/developer-support/';
 
 // UoW Server
-// $config['base_url'] = 'https://w1761369.users.ecs.westminster.ac.uk/2019483/';
+// $config['base_url'] = 'https://w1761369.users.ecs.westminster.ac.uk/developer-support/';
 
 
 /*

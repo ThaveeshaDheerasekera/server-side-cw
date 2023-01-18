@@ -13,15 +13,19 @@
 
     <body>
         <div class="navbar">
-            <span class="leader">
+            <div class="leader">
                 <img src="<?php echo base_url(); ?>public/assets/images/logo.png" alt="logo">
                 <h2>Developer Support</h2>
                 <button><img></button>
-            </span>
-            <span class="navbar-items">
-                <p><a href="<?php echo base_url(); ?>index.php/questions/index">Home</a></p>
-                <p><a href="<?php echo base_url(); ?>index.php/questions/about">About</a></p>
-            </span>
+            </div>
+            <div class="navbar-items">
+                <div class="nav-bar-item-card">
+                    <p><a href="<?php echo base_url(); ?>index.php/questions/index">Home</a></p>
+                </div>
+                <div class="nav-bar-item-card">
+                    <p><a href="<?php echo base_url(); ?>index.php/questions/about">About</a></p>
+                </div>
+            </div>
         </div>
     </body>
 
