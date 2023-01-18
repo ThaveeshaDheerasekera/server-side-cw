@@ -5,7 +5,7 @@
   align-items: center;
 }
 .body .header {
-  margin-top: 120px;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -27,10 +27,16 @@
   overflow: scroll;
   scroll-behavior: smooth;
 }
-.body .header .question-area p {
-  font-size: 19px;
+.body .header .question-area h3 {
+  border-bottom: 1px solid #bdbdbd;
+  padding-bottom: 10px;
   text-align: justify;
-  font-weight: bold;
+  font-size: 19px;
+}
+.body .header .question-area p {
+  font-size: 17px;
+  text-align: justify;
+  padding-top: 10px;
 }
 .body .header .btn-tag-panel {
   display: flex;
@@ -56,11 +62,11 @@
 }
 .body .header .btn-tag-panel .like-btn button img {
   content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill0.svg");
-  width: 18px;
+  width: 19px;
 }
 .body .header .btn-tag-panel .like-btn button:hover img {
   content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill1.svg");
-  width: 18px;
+  width: 19px;
 }
 .body .header .btn-tag-panel .like-btn p {
   font-size: 17px;
@@ -101,8 +107,8 @@
   margin-right: 20px;
 }
 .body .header .answer-btn:hover {
-  border: 2px solid black;
-  font-weight: bold;
+  border: 1.5px solid black;
+  font-weight: 500;
 }
 .body .main-container {
   width: 100%;
@@ -118,7 +124,7 @@
   background-color: #d9d9d9;
   border: 1px solid black;
   border-radius: 15px;
-  margin-top: 20px;
+  margin-bottom: 20px;
   cursor: pointer;
 }
 .body .main-container .answer-card .rating-section {
@@ -178,7 +184,7 @@
   content: url("http://localhost/developer-support/public/assets/images/thumb_down_fill1.svg");
 }
 .body .main-container .answer-card .rating-section .dislike-btn p {
-  font-size: 19px;
+  font-size: 17px;
 }
 .body .main-container .answer-card .vl {
   border-left: 1px solid black;

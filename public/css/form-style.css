@@ -17,7 +17,7 @@ input {
 
 input:focus,
 input:hover {
-  border: 2px solid #3b3b3b;
+  border: 1.5px solid #3b3b3b;
 }
 
 label {
@@ -40,8 +40,8 @@ label {
 }
 
 .btn:hover {
-  border: 2px solid black;
-  font-weight: 600;
+  border: 1.5px solid black;
+  font-weight: 500;
 }
 
 .cancel-btn {
@@ -54,7 +54,7 @@ label {
 }
 
 a:hover {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=form-style.css.map */

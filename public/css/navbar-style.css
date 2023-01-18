@@ -14,10 +14,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 40%;
+  width: 35%;
   height: 100%;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
   background: #9ba17b;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
@@ -38,31 +38,41 @@
 }
 .navbar .leader button img {
   content: url("http://localhost/developer-support/public/assets/images/account_circle_fill0.svg");
-  width: 35px;
+  width: 30px;
   height: auto;
 }
 .navbar .leader button:hover img {
   content: url("http://localhost/developer-support/public/assets/images/account_circle_fill1.svg");
-  width: 35px;
+  width: 30px;
   height: auto;
 }
 .navbar .navbar-items {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 15%;
-  margin-right: 40px;
+  width: 20%;
+  height: 100%;
 }
-.navbar .navbar-items p {
-  font-size: 30px;
+.navbar .navbar-items .nav-bar-item-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid black;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  background-color: #d9d9d9;
 }
-.navbar .navbar-items p a {
+.navbar .navbar-items .nav-bar-item-card p {
+  font-size: 19px;
+  font-weight: 500;
+}
+.navbar .navbar-items .nav-bar-item-card p a {
   text-decoration: none;
   color: black;
 }
-.navbar .navbar-items p a:hover,
-.navbar .navbar-items p .active {
-  font-weight: 600;
+.navbar .navbar-items .nav-bar-item-card:hover {
+  background-color: #bdbdbd;
 }
 
 /*# sourceMappingURL=navbar-style.css.map */
