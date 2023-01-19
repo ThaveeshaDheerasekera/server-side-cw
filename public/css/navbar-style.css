@@ -37,12 +37,12 @@
   cursor: pointer;
 }
 .navbar .leader button img {
-  content: url("http://localhost/developer-support/public/assets/images/account_circle_fill0.svg");
+  content: url("https://w1761369.users.ecs.westminster.ac.uk/developer-support/public/assets/images/account_circle_fill0.svg");
   width: 30px;
   height: auto;
 }
 .navbar .leader button:hover img {
-  content: url("http://localhost/developer-support/public/assets/images/account_circle_fill1.svg");
+  content: url("https://w1761369.users.ecs.westminster.ac.uk/developer-support/public/assets/images/account_circle_fill1.svg");
   width: 30px;
   height: auto;
 }
