@@ -38,7 +38,7 @@
                         egestas. Aliquam erat volutpat.</p>
                 </div>
                 <div class="btn-tag-panel">
-                    <button class="answer-btn">Answer</button>
+                    <button class="answer-btn" onclick="viewAnswerPage()">Answer</button>
                     <div class="like-btn"><button><img></button>
                         <p>30</p>
                     </div>
@@ -76,22 +76,11 @@
             </div>
         </div>
 
-        <!-- <script>
-        $(document).ready(function() {
-            $('#answer-section').click(function(event) {
-                event.preventDefault();
-                console.log(this.className);
-                if (this.className == 'answer-card') {
-                    $('.answer-card').addClass('answer-card-extend');
-                    $('#p-extend').addClass('p-extend');
-                } else {
-                    $('.answer-card').removeClass('answer-card-extend');
-                    $('#p-extend').removeClass('p-extend');
-
-                }
-            })
-        })
-        </script> -->
+        <script>
+            function viewAnswerPage() {
+                window.location.assign("<?php echo base_url(); ?>index.php/answers")
+            }
+        </script>
     </body>
 
 </html>

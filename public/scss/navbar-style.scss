@@ -4,6 +4,9 @@
 	justify-content: space-between;
 }
 
+$url: "http://localhost/developer-support/public/assets/images";
+//$url: "https://w1761369.users.ecs.westminster.ac.uk/developer-support/public/assets/images";
+
 // colors
 $gray-color: #d9d9d9;
 $red-color: #cfa197;
@@ -53,14 +56,14 @@ $h1-font: 23px;
 			cursor: pointer;
 
 			img {
-				content: url("https://w1761369.users.ecs.westminster.ac.uk/developer-support/public/assets/images/account_circle_fill0.svg");
+				content: url($url + "/account_circle_fill0.svg");
 				width: 30px;
 				height: auto;
 			}
 
 			&:hover {
 				img {
-					content: url("https://w1761369.users.ecs.westminster.ac.uk/developer-support/public/assets/images/account_circle_fill1.svg");
+					content: url($url + "/account_circle_fill1.svg");
 					width: 30px;
 					height: auto;
 				}

@@ -146,7 +146,7 @@ class Questions extends REST_Controller {
         $this->form_validation->set_rules('user_id', 'User ID', 'required');
         $this->form_validation->set_rules('question_id', 'Question ID', 'required');
 
-        if($this->form_validation->run() == FALSE) {
+        if(!$this->form_validation->run()) {
             $this->response(
                 array(
                     "status" => 0,

@@ -35,7 +35,8 @@
             </div>
 
             <div class="container">
-                <?php foreach($questions as $row) { ?>
+                <?php $questions = $this->Questions_Model->listQuestions();
+                foreach($questions as $row) { ?>
                 <a href="<?php echo base_url(); ?>index.php/questions/question">
                     <div class="question-card">
                         <div class="rating-section">

@@ -14,13 +14,6 @@ class Questions_Model extends CI_Model {
         $this->db->from('question');
         $query = $this->db->get();
         return $query->result();
-
-        $num_data_returned = $this->db->num_rows();
-
-        if($num_data_returned < 1) {
-            echo 'There is no data in the database';
-            exit();
-        }
     }
 
     public function getQuestionByID($id) {

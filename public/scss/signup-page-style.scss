@@ -10,6 +10,9 @@ $h3-font: 17px;
 $h2-font: 19px;
 $h1-font: 23px;
 
+$url: "http://localhost/developer-support/public/assets/images";
+//$url: "https://w1761369.users.ecs.westminster.ac.uk/developer-support/public/assets/images";
+
 body {
 	// background-color: white;
 	overflow: hidden;
@@ -44,13 +47,13 @@ body {
 
 			img {
 				width: $h1-font;
-				content: url("http://localhost/developer-support/public/assets/images/arrow_back_wght400.svg");
+				content: url($url + "/arrow_back_wght400.svg");
 			}
 
 			&:hover {
 				img {
 					width: $h1-font;
-					content: url("http://localhost/developer-support/public/assets/images/arrow_back_wght600.svg");
+					content: url($url + "/arrow_back_wght600.svg");
 				}
 			}
 		}

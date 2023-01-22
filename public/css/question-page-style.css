@@ -61,11 +61,11 @@
   border: none;
 }
 .body .header .btn-tag-panel .like-btn button img {
-  content: url("https://w1761369.users.ecs.westminster.ac.uk/developer-support/public/assets/images/thumb_up_fill0.svg");
+  content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill0.svg");
   width: 19px;
 }
 .body .header .btn-tag-panel .like-btn button:hover img {
-  content: url("https://w1761369.users.ecs.westminster.ac.uk/developer-support/public/assets/images/thumb_up_fill1.svg");
+  content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill1.svg");
   width: 19px;
 }
 .body .header .btn-tag-panel .like-btn p {
@@ -87,11 +87,11 @@
   border: none;
 }
 .body .header .btn-tag-panel .dislike-btn button img {
-  content: url("https://w1761369.users.ecs.westminster.ac.uk/developer-support/public/assets/images/thumb_down_fill0.svg");
+  content: url("http://localhost/developer-support/public/assets/images/thumb_down_fill0.svg");
   width: 18px;
 }
 .body .header .btn-tag-panel .dislike-btn button:hover img {
-  content: url("https://w1761369.users.ecs.westminster.ac.uk/developer-support/public/assets/images/thumb_down_fill1.svg");
+  content: url("http://localhost/developer-support/public/assets/images/thumb_down_fill1.svg");
   width: 18px;
 }
 .body .header .btn-tag-panel .dislike-btn p {
@@ -153,10 +153,10 @@
 }
 .body .main-container .answer-card .rating-section .like-btn button img {
   width: 19px;
-  content: url("https://w1761369.users.ecs.westminster.ac.uk/developer-support/public/assets/images/thumb_up_fill0.svg");
+  content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill0.svg");
 }
 .body .main-container .answer-card .rating-section .like-btn button:hover img {
-  content: url("https://w1761369.users.ecs.westminster.ac.uk/developer-support/public/assets/images/thumb_up_fill1.svg");
+  content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill1.svg");
 }
 .body .main-container .answer-card .rating-section .like-btn p {
   font-size: 17px;
@@ -178,10 +178,10 @@
 }
 .body .main-container .answer-card .rating-section .dislike-btn button img {
   width: 19px;
-  content: url("https://w1761369.users.ecs.westminster.ac.uk/developer-support/public/assets/images/thumb_down_fill0.svg");
+  content: url("http://localhost/developer-support/public/assets/images/thumb_down_fill0.svg");
 }
 .body .main-container .answer-card .rating-section .dislike-btn button:hover img {
-  content: url("https://w1761369.users.ecs.westminster.ac.uk/developer-support/public/assets/images/thumb_down_fill1.svg");
+  content: url("http://localhost/developer-support/public/assets/images/thumb_down_fill1.svg");
 }
 .body .main-container .answer-card .rating-section .dislike-btn p {
   font-size: 17px;
