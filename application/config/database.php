@@ -100,11 +100,11 @@ $db['default'] = array(
 
 // $db['default'] = array(
 // 	'dsn'	=> '',
-// 	'hostname' => 'phpmyadmin.ecs.westminster.ac.uk',
+// 	'hostname' => '',
 // 	'port' => '3306',
-// 	'username' => 'w1761369',
-// 	'password' => 'ChRswpdffTvV',
-// 	'database' => 'w1761369_0',
+// 	'username' => '',
+// 	'password' => '',
+// 	'database' => '',
 // 	'dbdriver' => 'mysqli',
 // 	'dbprefix' => '',
 // 	'pconnect' => FALSE,
