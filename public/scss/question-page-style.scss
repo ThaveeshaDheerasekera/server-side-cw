@@ -4,9 +4,14 @@
 	justify-content: space-between;
 }
 
+$url: "http://localhost/developer-support/public/assets/images";
+//$url: "https://w1761369.users.ecs.westminster.ac.uk/developer-support/public/assets/images";
+
 // colors
 $gray-color: #d9d9d9;
 $red-color: #cfa197;
+$green-color: #9ba17b;
+$dark-gray-color: #bdbdbd;
 
 // font sizes
 $n-font: 15px;
@@ -21,7 +26,7 @@ $h1-font: 23px;
 	align-items: center;
 
 	.header {
-		margin-top: 120px;
+		margin-top: 70px;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -44,10 +49,17 @@ $h1-font: 23px;
 			overflow: scroll;
 			scroll-behavior: smooth;
 
-			p {
-				font-size: $h2-font;
+			h3 {
+				border-bottom: 1px solid $dark-gray-color;
+				padding-bottom: 10px;
 				text-align: justify;
-				font-weight: bold;
+				font-size: $h2-font;
+			}
+
+			p {
+				font-size: $h3-font;
+				text-align: justify;
+				padding-top: 10px;
 			}
 		}
 
@@ -74,14 +86,14 @@ $h1-font: 23px;
 					border: none;
 
 					img {
-						content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill0.svg");
-						width: 18px;
+						content: url($url + "/thumb_up_fill0.svg");
+						width: $h2-font;
 					}
 
 					&:hover {
 						img {
-							content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill1.svg");
-							width: 18px;
+							content: url($url + "/thumb_up_fill1.svg");
+							width: $h2-font;
 						}
 					}
 				}
@@ -107,13 +119,13 @@ $h1-font: 23px;
 					border: none;
 
 					img {
-						content: url("http://localhost/developer-support/public/assets/images/thumb_down_fill0.svg");
+						content: url($url + "/thumb_down_fill0.svg");
 						width: 18px;
 					}
 
 					&:hover {
 						img {
-							content: url("http://localhost/developer-support/public/assets/images/thumb_down_fill1.svg");
+							content: url($url + "/thumb_down_fill1.svg");
 							width: 18px;
 						}
 					}
@@ -135,8 +147,8 @@ $h1-font: 23px;
 			margin-right: 20px;
 
 			&:hover {
-				border: 2px solid black;
-				font-weight: bold;
+				border: 1.5px solid black;
+				font-weight: 500;
 			}
 		}
 	}
@@ -144,7 +156,6 @@ $h1-font: 23px;
 	.main-container {
 		width: 100%;
 		padding: 0 35px;
-
 		text-decoration: none;
 		color: black;
 
@@ -156,7 +167,7 @@ $h1-font: 23px;
 			background-color: $gray-color;
 			border: 1px solid black;
 			border-radius: 15px;
-			margin-top: 20px;
+			margin-bottom: 20px;
 			cursor: pointer;
 
 			.rating-section {
@@ -185,12 +196,12 @@ $h1-font: 23px;
 
 						img {
 							width: $h2-font;
-							content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill0.svg");
+							content: url($url + "/thumb_up_fill0.svg");
 						}
 
 						&:hover {
 							img {
-								content: url("http://localhost/developer-support/public/assets/images/thumb_up_fill1.svg");
+								content: url($url + "/thumb_up_fill1.svg");
 							}
 						}
 					}
@@ -217,17 +228,17 @@ $h1-font: 23px;
 
 						img {
 							width: $h2-font;
-							content: url("http://localhost/developer-support/public/assets/images/thumb_down_fill0.svg");
+							content: url($url + "/thumb_down_fill0.svg");
 						}
 
 						&:hover {
 							img {
-								content: url("http://localhost/developer-support/public/assets/images/thumb_down_fill1.svg");
+								content: url($url + "/thumb_down_fill1.svg");
 							}
 						}
 					}
 					p {
-						font-size: $h2-font;
+						font-size: $h3-font;
 					}
 				}
 			}
