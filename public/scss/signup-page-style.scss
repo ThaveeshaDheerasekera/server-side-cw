@@ -1,49 +1,78 @@
+// colors
+$gray-color: #d9d9d9;
+$red-color: #cfa197;
+$green-color: #9ba17b;
+$dark-gray-color: #bdbdbd;
+
+// font sizes
+$n-font: 15px;
+$h3-font: 17px;
+$h2-font: 19px;
+$h1-font: 23px;
+
+$url: "http://localhost/developer-support/public/assets/images";
+//$url: "https://w1761369.users.ecs.westminster.ac.uk/developer-support/public/assets/images";
+
 body {
-    height: 100vh;
-    width: 100hh;
-    background-color: #d9d9d9;
+	// background-color: white;
+	overflow: hidden;
+	position: relative;
 }
 
 .container {
-    position: absolute;
-    top: 15%;
-    left: 20%;
-    right: 20%;
-    bottom: 15%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    background-image: linear-gradient(0.25turn, #9ba17b, 50%, #fff);
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+	position: fixed;
+	top: 15%;
+	left: 20%;
+	width: 900px;
+	height: 550px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	background-image: linear-gradient(0.25turn, #9ba17b, 50%, #fff);
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-.header {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: relative
-}
+	.header {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		position: relative;
 
-h2 {
-    position: fixed;
-}
+		button {
+			margin-right: 85%;
+			position: absolute;
+			background-color: transparent;
+			border: none;
 
-.form-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-}
+			img {
+				width: $h1-font;
+				content: url($url + "/arrow_back_wght400.svg");
+			}
 
-.left,
-.right {
-    width: 40%
-}
+			&:hover {
+				img {
+					width: $h1-font;
+					content: url($url + "/arrow_back_wght600.svg");
+				}
+			}
+		}
 
-.btn-span {
-    margin-right: 85%;
-    position: absolute
+		h2 {
+			position: fixed;
+		}
+	}
+
+	.form-section {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-evenly;
+		width: 100%;
+
+		.left,
+		.right {
+			width: 40%;
+		}
+	}
 }
