@@ -23,7 +23,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/2019483/';
+
+// localhost
+$config['base_url'] = 'http://localhost/developer-support/';
+
+// UoW Server
+// $config['base_url'] = 'https://w1761369.users.ecs.westminster.ac.uk/2019483/';
+
 
 /*
 |--------------------------------------------------------------------------

@@ -1,0 +1,68 @@
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d9d9d9;
+  border-bottom: 1px solid black;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+}
+.navbar .leader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  height: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+  background: #9ba17b;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 0 0 30px 0;
+  margin-bottom: -1px;
+}
+.navbar .leader img {
+  height: 50px;
+  width: auto;
+}
+.navbar .leader h2 {
+  font-size: 23px;
+}
+.navbar .leader button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.navbar .leader button img {
+  content: url("http://localhost/developer-support/public/assets/images/account_circle_fill0.svg");
+  width: 35px;
+  height: auto;
+}
+.navbar .leader button:hover img {
+  content: url("http://localhost/developer-support/public/assets/images/account_circle_fill1.svg");
+  width: 35px;
+  height: auto;
+}
+.navbar .navbar-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+  margin-right: 40px;
+}
+.navbar .navbar-items p {
+  font-size: 30px;
+}
+.navbar .navbar-items p a {
+  text-decoration: none;
+  color: black;
+}
+.navbar .navbar-items p a:hover,
+.navbar .navbar-items p .active {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=navbar-style.css.map */

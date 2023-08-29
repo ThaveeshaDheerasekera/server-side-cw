@@ -1,0 +1,70 @@
+@mixin flex-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+$green-color: #9ba17b;
+$gray-color: #d9d9d9;
+$border-width: 1.5px;
+
+.navbar {
+	width: 100%;
+	height: 120px;
+	@include flex-row;
+	background-color: $gray-color;
+	border-bottom: $border-width solid black;
+}
+
+.leader {
+	@include flex-row;
+	width: 50%;
+	height: 100%;
+	padding-left: 60px;
+	padding-right: 60px;
+	background: $green-color;
+	border-right: $border-width solid black;
+	border-bottom: $border-width solid black;
+	border-radius: 0 0 30px 0;
+	margin-bottom: -$border-width;
+
+	img {
+		height: 85px;
+		width: auto;
+	}
+
+	h2 {
+		font-size: 36px;
+	}
+}
+
+.account-icon {
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+
+	img {
+		height: 35px;
+		width: auto;
+	}
+}
+
+.navbar-items {
+	@include flex-row;
+	width: 20%;
+	margin-right: 40px;
+
+	p {
+		font-size: 30px;
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+
+		a:hover,
+		.active {
+			font-weight: 600;
+		}
+	}
+}

@@ -1,7 +1,7 @@
 body {
-	height: 100vh;
-	width: 100hh;
-	background-color: #d9d9d9;
+	background-color: #fff;
+	width: 100%;
+	overflow: hidden;
 }
 
 .container {
@@ -67,28 +67,6 @@ body {
 	font-size: 28px;
 }
 
-.form-group {
-	display: flex;
-	flex-direction: column;
-	padding: 10px 0;
-}
-
-input {
-	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #3b3b3b;
-	border-radius: 4px;
-	box-sizing: border-box;
-	background-color: #d9d9d9;
-}
-
-label {
-	font-size: 18px;
-	font-weight: 600;
-}
-
 .btn-panel-row {
 	width: 100%;
 	display: flex;
@@ -106,26 +84,4 @@ label {
 
 .btn-panel-column a {
 	text-decoration: none;
-}
-
-.btn {
-	width: 100px;
-	height: 50px;
-	border-radius: 5px;
-	border: 1px solid black;
-	font-weight: 600;
-	font-size: 18px;
-}
-
-.sign-up-btn {
-	background-color: #d4d675;
-}
-
-.cancel-btn {
-	margin-right: 10px;
-	background-color: #cfb997;
-}
-
-.login-btn {
-	background-color: #ea7a3b;
 }

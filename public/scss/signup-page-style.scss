@@ -1,0 +1,49 @@
+body {
+    height: 100vh;
+    width: 100hh;
+    background-color: #d9d9d9;
+}
+
+.container {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    right: 20%;
+    bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(0.25turn, #9ba17b, 50%, #fff);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative
+}
+
+h2 {
+    position: fixed;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.left,
+.right {
+    width: 40%
+}
+
+.btn-span {
+    margin-right: 85%;
+    position: absolute
+}
